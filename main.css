@@ -398,7 +398,7 @@ footer p{
 }
 /**********************MEDIA SECTION STARTS HERE***********************/
 /*https://www.w3schools.com/css/css3_mediaqueries.asp*/
-@media screen and (max-width: 1350px){ /*Below 1500px the page will re-size/re-shape the header to keep it tidy*/
+@media screen and (max-width: 1350px){ /*Below 1350px the page will re-size/re-shape the header to keep it tidy*/
 
   header nav{
     float:right;
@@ -462,6 +462,42 @@ header nav{
   padding: 20px 0 0 100px;
 }
 
+/***************************Change some parts of the Reservations page below 960px********/	
+#reservations_section input{
+  margin: 5px 0 10px 0;
+  padding: 5px 0 5px 0;
+  width: 30%;
+  height: 16px;
+  font-size: 16px;
+
+}
+	
+#booking h2{
+    padding-top: 80px;
+    font-size: 150%;
+}
+
+#booking select{
+  height: 38px;
+  width:15%;
+  color:grey;
+  font-size: 16px;
+  /*The below removes the style from the dropdown, taken from this stack overflow post http://stackoverflow.com/questions/16603979/select-removing-dropdown-arrow*/
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance:none;
+}
+
+.reservation_button{
+  height:50px;
+  width:15%;
+  border:none;
+  font-size: 12px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+	
 }
 
 @media screen and (max-width: 600px){/*Below 720px the page will re-size/re-shape the header to keep it tidy*/
