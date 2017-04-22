@@ -136,13 +136,15 @@ header a:hover{ /*change to orange on hover*/
   padding: 0;
   margin: 0;
 }
+#index-gap-large{
+  min-height: 400px;
+  padding: 0;
+  margin: 0;
+}
 #main_section{
-    min-height: 800px;
-    /*background: url("images/wood-background.jpg") no-repeat;*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align:center;
-    color: #000000;
+  max-height: 200px;
+  text-align:center;
+  color: #000000;
 }
 #main_section h1{
     margin: 200px 0 50px 0;
@@ -567,8 +569,6 @@ nav ul li{
 
 #menu_section{
     min-height: 300px;
-    background: url("images/wood-background.jpg") no-repeat;
-    background-size: cover;
     text-align:center;
     color: #000000;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
