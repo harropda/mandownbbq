@@ -1,0 +1,970 @@
+/*******************NOTES*******************/
+/*padding and margin order is top right bottom left*/
+/*position:fixed - in header is used to keep it on screen even when scrolling*/
+/*media were necessary to keep the header tidy on reducing width*/
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    /*font-family: "Comic Sans MS", cursive, sans-serif;*/
+    font-family: 'Anton', sans-serif;
+    padding: 0;
+    margin: 0;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    /*background-color: #000000;*/
+
+}
+.container {
+	width: 100%; /*Set the width of the entire website here */
+
+  overflow: hidden;
+}
+.container_90 {
+	width: 90%; /*Set the width of the entire website here */
+	margin-right: auto;
+	margin-left: auto; /* Margin-left and right are set to auto to center the container */
+  overflow: hidden;
+}
+
+.style1{
+  background-color: #CF5300;
+  color:#000000;
+}
+.style2{
+  background-color: #000000;
+  color:#CF5300;
+}
+
+/******************************************INDEX PAGE STARTS***********************************/
+/**********************HEADER STARTS HERE***********************/
+header{
+	color: #CF5300;
+	background-color: #000000;
+	min-height: 100px;
+	border-bottom: #CF5300 2px solid;
+  padding: 10px 0 0 0;
+  width:100%;
+  position: fixed; /*keeps header on screen all the time*/
+}
+#logo{
+	float: left;
+	width: 139px;
+	height:100px;
+	background: url("./images/bbq_logo.jpg") no-repeat center;
+	padding: 0;
+}
+
+header a{
+  color:#FFFFFF;
+  text-decoration: none;
+  font-size: 24px;
+  text-shadow: -1px 0 orange, 0 1px orange, 1px 0 orange, 0 -1px orange;
+}
+
+.current_page{ /*class is attached to the current page per html page*/
+  color: #CF5300;
+  font-size: 24px;
+}
+
+header ul{
+  padding: 0;
+  margin: 0;
+}
+header li{
+  float:left;
+  padding: 0 10px 0 10px;
+  display: inline;
+}
+
+header #restaurant_name{
+    float:left;
+}
+header #restaurant_name h2{
+    font-size: 55px;
+    margin: 15px;
+    padding-left: 40px;
+}
+header nav{
+  float:right;
+  margin-top: 70px;
+  margin-right: 90px
+}
+header a:hover{ /*change to orange on hover*/
+		color:#CF5300;
+}
+
+#bar_menu{  /*3 bar menu hidden now - used again in Media Section*/
+	display:hidden;
+	width: 50px;
+	height: 50px;
+	background: url("./images/menuicon_50.png") no-repeat center ;
+}
+/**********************HEADER END HERE***********************/
+
+
+/**********************MAIN SECTION STARTS HERE***********************/
+#index_main_section{
+    max-height: 200px;
+    text-align:center;
+    color: #000000;
+}
+
+.index-message{
+  max-height: 120px;
+  padding: 0;
+  margin: 0;
+  color:#000000;
+  /*background-color: #CF5300;*/
+  text-align: center;
+}
+.index-message h1{
+    font-size: 64px;
+}
+.index-message p{
+    font-size: 24px;
+}
+#index-gap{
+  min-height: 100px;
+  padding: 0;
+  margin: 0;
+}
+#index-gap-small{
+  min-height: 40px;
+  padding: 0;
+  margin: 0;
+}
+#main_section{
+    min-height: 800px;
+    background: url("images/wood-background.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    color: #000000;
+}
+#main_section h1{
+    margin: 200px 0 50px 0;
+    font-size: 64px;
+}
+
+#main_section p{
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1160px){
+    .menu{
+        /* float: right; */
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+    }
+    #main_section h1{
+        margin: 1% 0 1% 0;
+        font-size: 32px;
+    }
+
+    #main_section h2{
+        margin: 10% 0 10% 0;
+        font-size: 24px;
+    }
+
+    #main_section h2{
+        font-size: 22px;
+    }
+
+    #main_section h3{
+        font-size: 18px;
+    }
+
+    #index_main_section{
+        max-height: 120px;
+        text-align:center;
+        color: #000000;
+    }
+
+    .index-message{
+      max-height: 800px;
+      padding: 0;
+      margin: 0;
+      color:#000000;
+      /*background-color: #CF5300;*/
+      text-align: center;
+    }
+    .index-message h1{
+        font-size: 24px;
+    }
+    .index-message p{
+        font-size: 16px;
+    }
+    #index-gap{
+      min-height: 75px;
+      padding: 0;
+      margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .menu{
+        /* float: right; */
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+    }
+    #main_section h1{
+        margin: 1% 0 1% 0;
+        font-size: 24px;
+    }
+
+    #main_section h2{
+        margin: 10% 0 10% 0;
+        font-size: 20px;
+    }
+
+    #main_section h2{
+        font-size: 18px;
+    }
+
+    #main_section h3{
+        font-size: 14px;
+    }
+
+    #index_main_section{
+        max-height: 100px;
+        text-align:center;
+        color: #000000;
+    }
+
+    .index-message{
+      max-height: 600px;
+      padding: 0;
+      margin: 0;
+      color:#000000;
+      /*background-color: #CF5300;*/
+      text-align: center;
+    }
+    .index-message h1{
+        font-size: 20px;
+    }
+    .index-message p{
+        font-size: 12px;
+    }
+    #index-gap{
+      min-height: 50px;
+      padding: 0;
+      margin: 0;
+    }
+}
+
+#social{
+  float: right;
+}
+/* SOCIAL MEDIA LINKS -> https://www.w3schools.com/howto/howto_css_social_media_buttons.asp*/
+/* Style all font awesome icons */
+.fa {
+   padding: 0.5%;
+   font-size: 1em;
+   width: 1%;
+   min-width: 10px;
+   text-align: center;
+   text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+   opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+/* Facebook */
+.fa-facebook {
+   background: #3B5998;
+   color: white;
+}
+/* Twitter */
+.fa-twitter {
+   background: #55ACEE;
+   color: white;
+}
+/* Instagram*/
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+/* StumbleUpon */
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+/* StumbleUpon */
+.fa-snapchat {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+@media only screen and (max-width: 600px){
+  .fa {
+     padding: 0.25%;
+     font-size: 0.25em;
+     width: 1%;
+     min-width: 10px;
+     text-align: center;
+     text-decoration: none;
+  }
+}
+
+
+/**********************OPENING HOURS BANNER STARTS HERE***********************/
+#opening_hours{
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  color:#000000;
+  background-color: #CF5300;
+  text-align: center;
+}
+@media only screen and (max-width: 600px){
+  #opening_hours{
+    font-size: 12px;
+  }
+}
+
+/**********************REVIEWS STARTS HERE***********************/
+#review_divider{
+  padding: 0;
+  margin: 0;
+  color:#000000;
+  background-color: #CF5300;
+  text-align: center;
+}
+#review_divider h2{
+  border-top: #000000 2px solid;
+  border-bottom: #000000 2px solid;
+}
+
+#reviews_section .review{ /*Splits each review into half the screen, then floats all 4 left for responsivness*/
+  float:left;
+  width:50%;
+}
+
+#reviews_section h4{
+  padding-left: 40px;
+  font-size:18px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#reviews_section p{
+  padding: 0 20px 0 20px; /*takes the text in from th div edges*/
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/*@keyframes changeLetter {
+  0%{
+    content: "I’ve eaten here a few times and its always fantastic. Great little bar with lovely staff and a great atmosphere. Its a small menu, but they have nailed it. Everything is gorgeous and its all quick and very reasonably priced. Pat. Galway."
+  }
+  50% {
+    color: white;
+  }
+  100% {
+    content: "i liike cake";
+  }
+
+}
+
+.review1::after{
+  animation: changeLetter 3s linear infinite alternate;
+}*/
+/**********************FOOTER STARTS HERE***********************/
+footer{
+  background-color: #000000;
+  color:#CF5300;
+  text-align: center;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  padding: 0;
+  margin: 0;
+
+}
+footer p{
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px){
+  footer {
+    font-size: 10px;
+  }
+}
+/**********************MEDIA SECTION STARTS HERE***********************/
+/*https://www.w3schools.com/css/css3_mediaqueries.asp*/
+@media screen and (max-width: 1350px){ /*Below 1500px the page will re-size/re-shape the header to keep it tidy*/
+
+  header nav{
+    float:right;
+    padding: 70px 140px 0 0;
+    margin:0;
+  }
+  header a{
+    color:#FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .current_page{
+    color: #CF5300;
+    font-size: 18px;
+  }
+
+
+  header #restaurant_name h2{
+      font-size: 36px;
+      margin: 10px;
+      padding: 30px 0 0 50px;
+  }
+
+  #logo{
+  	float: left;
+  	width: 80px;
+  	height:65px;
+  	background: url("./images/bbq_logo_66.jpg") no-repeat center;
+  	padding: 20px 0 0 50px;
+  }
+}
+
+@media screen and (max-width: 1250px){  /*Below 1250px the page will re-size/re-shape the header to keep it tidy*/
+header #restaurant_name h2{
+  padding: 30px 0 0 10px;
+  }
+header nav{
+  padding: 70px 50px 0 0;
+  margin:0;
+  }
+}
+
+
+@media screen and (max-width: 960px){ /*Below 1080px the page will re-size/re-shape the header to keep it tidy*/
+header #restaurant_name h2{
+  padding: 15px 0 0 20px;
+}
+
+header nav{
+  float: left;
+  padding: 5px 0 0 160px;
+  margin:0;
+
+}
+
+#logo{  /*resize logo with new smaller image for a smaller screen size*/
+  float: left;
+  width: 75px;
+  height:60px;
+  background: url("./images/bbq_logo_66.jpg") no-repeat center;
+  padding: 20px 0 0 100px;
+}
+
+}
+
+@media screen and (max-width: 600px){/*Below 720px the page will re-size/re-shape the header to keep it tidy*/
+
+header #restaurant_name h2{
+  font-size: 24px;
+  padding: 20px 0 0 0;
+  float: left;
+}
+#logo{
+  float: left;
+  width: 75px;
+  height:60px;
+  background: url("./images/bbq_logo_66.jpg") no-repeat center;
+  padding: 20px 0 0 10px;
+}
+/*Could be done without image using div's and coloured background https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+#bar_menu{
+  float:right;
+  padding:10px 0 0 0;
+  display: inline-block; /*makes 3 bar menu visible*/
+}
+
+header nav{
+  margin-left: 20px;
+  padding: 20px 0 0 0;
+}
+nav ul, nav:active ul{
+  display: none;
+  position: absolute;
+  margin: 40px 30px 0 0;
+  padding: 10px 0px 20px 10px;
+  background:#000000;
+  right:5px;
+  border: 1px solid #CF5300;
+  width:25%; /*size of pop-up menu */
+  z-index: 1;/*z-index gives preference to an element, putting it to the front*/
+}
+nav:hover ul{
+  display:block;
+}
+nav li{
+  text-align:left;
+  width: 100%;
+}
+
+nav ul li{
+  font-size: 18px;
+}
+}
+
+@media screen and (max-width: 500px){/*Below 500px the page will re-size/re-shape the header to keep it tidy*/
+
+header #restaurant_name h2{
+  display: none;
+  font-size: 24px;
+  padding: 20px 0 0 0;
+  float: left;
+}
+#logo{
+  float: left;
+  width: 75px;
+  height:60px;
+  background: url("./images/bbq_logo_66.jpg") no-repeat center;
+  padding: 50px 0 0 60px;
+}
+/*Could be done without image using div's and coloured background https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+#bar_menu{
+  float:right;
+  padding:40px 0 0 60px;
+  display: inline-block; /*makes 3 bar menu visible*/
+}
+
+header nav{
+  margin-left: 20px;
+  padding: 20px 0 0 0;
+}
+nav ul, nav:active ul{
+  display: none;
+  position: absolute;
+  margin: 40px 30px 0 0;
+  padding: 10px 0px 20px 10px;
+  background:#000000;
+  right:5px;
+  border: 1px solid #CF5300;
+  width:32%; /*size of pop-up menu */
+  z-index: 1;/*z-index gives preference to an element, putting it to the front*/
+}
+nav:hover ul{
+  display:block;
+}
+nav li{
+  text-align:left;
+  width: 100%;
+}
+
+nav ul li{
+  font-size: 18px;
+}
+}
+/**********************MEDIA SECTION ENDS HERE***********************/
+/******************************************INDEX PAGE ENDS***********************************/
+
+/**********************MENU SECTION STARTS HERE***********************/
+
+#menu_section{
+    min-height: 300px;
+    background: url("images/wood-background.jpg") no-repeat;
+    background-size: cover;
+    text-align:center;
+    color: #000000;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#menu_section h1{
+    margin: 1% 0 1% 0;
+    font-size: 4em;
+}
+
+#menu_section h2{
+    margin: 10% 0 10% 0;
+    font-size: 2.5em;
+}
+
+#menu_section h3{
+    margin: 0 0 0 0;
+    font-size: 1.5em;
+}
+
+#menu_section h4{
+    margin: 0 0 0 0;
+    font-size: 1em;
+}
+
+#menu_section p{
+    margin: 0 5% 0% 5%;
+    font-size: 1.5em;
+}
+
+.menu {
+  /*text-align: center;*/
+}
+.menu-sub {
+  /*float: left;*/
+  width: 40%;
+  margin: 0 auto;
+  padding: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px){
+    .menu{
+        /* float: right; */
+        margin-left: auto;
+        margin-right: auto;
+        display: table;
+    }
+    #menu_section{
+      min-height: 100px;
+    }
+    #menu_section h1{
+        margin: 1% 0 1% 0;
+        font-size: 24px;
+    }
+
+    #menu_section h2{
+        margin: 10% 0 10% 0;
+        font-size: 20px;
+    }
+
+    #menu_section h2{
+        font-size: 18px;
+    }
+
+    #menu_section h3{
+        font-size: 14px;
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 40%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slideshow-container-main {
+  max-width: 60%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.mySlides {
+    display: none;
+}
+
+.slideshow-container img {
+    position: relative;
+    left: 0;
+    top: 0;
+    max-width: 100%;
+    height: auto;
+    opacity: 1;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/**********************MENUS START HERE***********************/
+
+/******************************************MENU PAGE ENDS***********************************/
+
+/******************************************RESERVATIONS PAGE STARTS***********************************/
+/**********************MAIN RESERVATIONS SECTION STARTS HERE***********************/
+
+#reservations_section{
+    min-height: 800px;
+    padding-top: 140px; /*needed to pass beyond fixed header*/
+    background: url("images/wood-background.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    color: #CF5300;
+}
+
+#reservations_section .reservations_container{
+  padding-top: 100px;
+}
+
+
+#reservations_section input{
+  margin: 5px 0 10px 0;
+  padding: 5px 0 5px 0;
+  width: 40%;
+  height: 24px;
+  font-size: 16px;
+
+}
+
+#booking{
+  width: 50%;
+  background-color: rgba(0,0,0,0.5); /*HEX WAY -> http://stackoverflow.com/questions/15852122/hex-transparency-in-colors */
+  margin-right: auto;
+	margin-left: auto;
+  height: 480px;
+}
+
+
+#booking h2{
+    padding-top: 80px;
+    font-size: 200%;
+}
+
+#booking select{
+  height: 38px;
+  width:15%;
+  color:grey;
+  font-size: 16px;
+  /*The below removes the style from the dropdown, taken from this stack overflow post http://stackoverflow.com/questions/16603979/select-removing-dropdown-arrow*/
+  /*for firefox*/
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance:none;
+}
+
+.reservation_button{
+  height:50px;
+  width:20%;
+  border:none;
+  font-size: 18px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+button{
+  cursor: pointer;
+}
+
+/******************************************RESERVATIONS PAGE ENDS***********************************/
+
+/***********************************************************ABOUT.HTML STARTS HERE****************************************************************/
+#map-section{
+  min-height: 40px;
+}
+#map{
+  margin: auto;
+}
+
+#about_pic{
+    min-height: 800px;
+    background: url("images/about_bbqinterior.jpg") no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align:center;
+    color: #CF5300;
+}
+
+#about_divider1 h2{
+  margin: 0;
+  padding: 10px 0 10px 100px;
+
+  color:#000000;
+  background-color: #CF5300;
+  text-align:left;
+}
+#about_divider1 h2{
+  text-decoration: overline underline;
+}
+
+#about_container1{
+  display:inline-block;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  background-color: #CF5300;
+}
+#about_container2{
+  display:inline-block;
+  width:100%;
+  padding: 0;
+  margin: 0;
+  background-color:#000000;
+  min-width: 320px;
+}
+.About_Box {
+  display:inline-block;
+  min-height: 300px;
+  min-width: 300px;
+  padding: 0;
+  margin: 0;
+  float:left;
+ }
+
+ .half{
+   width: 50%;
+ }
+
+ .quarter{
+   width: 25%;
+ }
+#box1 {
+  float: left;
+}
+#box2 {
+  /*background: url("images/about_food.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;*/
+  float: left;
+}
+
+#box2 img{
+  max-width: 100%;
+  height: auto;
+}
+#box3 {
+  background: url("images/about_bbqpit.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#box4 {
+  float: left;
+  background: url("images/about_food1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#box5 {
+  float: left;
+
+}
+#box6 {
+  background: url("images/about_food3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  float: right;
+}
+
+/* HOME PAGE BACKGROUND SLIDESHOW
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+.cb-slideshow:after {
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left;
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    animation: titleAnimation 30s linear infinite 0s;
+}
+.cb-slideshow li div h3 {
+    font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+    font-size: 240px;
+    padding: 0;
+    line-height: 200px;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url(../images/about_bbqinterior.jpg)
+}
+.cb-slideshow li:nth-child(2) span {
+    background-image: url(../images/full-screen-brisket.jpg);
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) span {
+    background-image: url(../images/full-screen-fire.jpg);
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) span {
+    background-image: url(../images/full-screen-ribs2.jpg);
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) span {
+    background-image: url(../images/full-screen-wings.jpg);
+    animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(2) div {
+    animation-delay: 6s;
+}
+.cb-slideshow li:nth-child(3) div {
+    animation-delay: 12s;
+}
+.cb-slideshow li:nth-child(4) div {
+    animation-delay: 18s;
+}
+.cb-slideshow li:nth-child(5) div {
+    animation-delay: 24s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes titleAnimation {
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+
+@media screen and (max-width: 1140px) {
+    .cb-slideshow li div h3 { font-size: 140px }
+}
+@media screen and (max-width: 600px) {
+    .cb-slideshow li div h3 { font-size: 80px }
+}
+*/

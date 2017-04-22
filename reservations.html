@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MAN DOWN BBQ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Needs SEO - see https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags-->
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30">
+	<link rel="icon" type="image/jpg" href="images/BBQCHEF_60px.jpg" sizes="60x60">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="./javascript/script.js"></script>
+</head>
+
+
+
+<!-- Where to put scripts
+	http://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup-->
+<body>
+	<header>
+		<div class="container">
+			<a href="index.html" id="logo"></a>
+			<div id="restaurant_name">
+				<h2>MAN DOWN BAR &amp; BBQ</h2>
+			</div>
+			<nav>
+				<a href="#" id="bar_menu"></a> <!--used to transfrom the nav bar in an image-->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li class="current_page">Reservations</li>
+					<li><a href="bar.html">Bar</a></li>
+					<li><a href="about.html">About Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+<section id="reservations_section">  <!-- Use of section tag https://www.w3schools.com/html/html_layout.asp -->
+	<div class="reservations_container">
+
+    <form id="booking" class="form_style">
+			<h2>RESERVATIONS</h2>
+      <input type="text" required autofocus placeholder="NAME">
+			<br>
+      <input type="text" required placeholder="PHONE NO.">
+			<br>
+      <input type="email" placeholder="EMAIL">
+			<br>
+      <input type="NUMBER" required placeholder="NUMBER OF PEOPLE">
+			<br>
+      <input id="datepicker" type="text" placeholder="DATE" class="date">
+
+      <select> <!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_option-->
+        <option value="selected">TIME</option>
+        <option value="12.00">12.00</option>
+        <option value="12.30">12.30</option>
+        <option value="13.00">13.00</option>
+        <option value="13.30">13.30</option>
+        <option value="14.00">14.00</option>
+        <option value="14.30">14.30</option>
+        <option value="15.00">15.00</option>
+        <option value="15.30">15.30</option>
+        <option value="16.00">16.00</option>
+        <option value="16.30">16.30</option>
+        <option value="17.00">17.00</option>
+        <option value="17.30">17.30</option>
+        <option value="18.00">18.00</option>
+        <option value="18.30">18.30</option>
+        <option value="19.00">19.00</option>
+        <option value="19.30">19.30</option>
+        <option value="20.00">20.00</option>
+        <option value="20.30">20.30</option>
+        <option value="21.00">21.00</option>
+        <option value="21.30">21.30</option>
+      </select>
+			<br>
+
+      <button type="submit" class="reservation_button style1">ENQUIRE</button>
+    </form>
+  </div>
+</section>
+
+<section id="opening_hours">
+	<div class="container">
+		<h3>BAR OPEN 7 DAYS A WEEK FROM 12PM TIL LATE - BBQ SERVED 7 DAYS A WEEK FROM 12-9PM</h3>
+	</div>
+</section>
+<footer>
+	<p>MAN DOWN BAR &amp; BBQ,TEMPLE BAR DUBLIN 2 IRELAND &emsp;    EMAIL: feedme@mandown.com &emsp;    &copy; MAN DOWN 2017</p>   <!-- &emsp; puts a tab between words-->
+</footer>
+
+</body>
+</html>

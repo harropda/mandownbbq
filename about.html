@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MAN DOWN BBQ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Needs SEO - see https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags-->
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+	<style>
+			.parallax {
+			/* The image used */
+			background-image: url("images/about_bbqinterior.jpg");
+
+			/* Set a specific height */
+			height: 1400px;
+
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
+	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30">
+	<link rel="icon" type="image/jpg" href="images/BBQCHEF_60px.jpg" sizes="60x60">
+</head>
+
+<body>
+	<header>
+		<div class="container">
+			<a href="index.html" id="logo"></a>
+			<div id="restaurant_name">
+				<h2>MAN DOWN BAR &amp; BBQ</h2>
+			</div>
+			<nav>
+				<a href="#" id="bar_menu"></a> <!--used to transfrom the nav bar in an image-->
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="reservations.html">Reservations</a></li>
+					<li><a href="bar.html">Bar</a></li>
+					<li class="current_page">About Us</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="index_main_section">  <!-- Use of section tag https://www.w3schools.com/html/html_layout.asp -->
+			<div class="parallax"></div>
+	</section>
+	<section id="index-gap-small">
+	</section>
+  <section id="about_divider1">
+  	<div class="container">
+  		<h2>≈ OUR STORY ≈</h2>
+  	</div>
+  </section>
+
+	<section id='about_container1'>
+  <div id='box1' class='About_Box  half style1'>
+		<p>So what’s our story? We wanted to bring the finest BBQ to Dublin, and to open up a place that was like nothing else in Ireland. We wanted to bring all that smoky BBQ flavour right to your doorstep. The very first step was to send our Head Chef, Oliver Byrne, stateside. He traveled to Memphis and spent weeks learning the craft of BBQing. You can learn how to cook it but to make it taste the best you’ve gotta have the best – so we picked up our secret weapon, our Southern Pride Smoker. Southern Pride have been making smokers since 1973, this experience and craftsmanship goes into every smoker they produce and with this assurance to quality, we knew we were onto something! The Southern Pride Smoker was so big we couldn’t get it through the door of our Wellington Quay restaurant.  &darr;</p>
+		</div>
+  <div id='box2' class='About_Box quarter'>
+		 <img src="images/about_food.jpg" alt="food"> 
+	</div>
+
+  <div id='box3' class='About_Box quarter'>
+
+	</div>
+
+</section>
+<section id="index-gap-small">
+</section>
+<section id='about_container2'>
+
+	<div id='box4' class='About_Box quarter'>
+
+		</div>
+
+<div id='box5' class='About_Box half style2'>
+	<p>so we ended up taking off the front wall to get it into our kitchen. Once in, we got down to the serious (and seriously delicious) task of smoking our meat to perfection. It took us 6 weeks of careful testing. The first step was to choose the wood we’d use. We settled on oak, which we think yields the best taste. We source our cuts of meat especially to make sure they are the tastiest, most tender cuts going. We treat our meat with our homemade rubs and then smoke them for 14 hours before serving. Even the meat is chosen with care, specially selected cows are used for our brisket, which we think is the best brisket this side of the Mississippi. We do our ribs St. Louis Style – which means the entire rack, cooked low and slow, dipped in our signature sauce, wrapped and cooked again to finish it off.</p>
+	</div>
+<div id='box6' class='About_Box quarter'>
+
+</div>
+
+</section>
+<section id="map-section">
+		<div id="map" style="width:400px;height:400px;">My map will go here</div>
+		<script>
+		function myMap() {
+			var myLatLng = {lat: 53.345624, lng: -6.262851};
+
+			var map = new google.maps.Map(document.getElementById("map"), {
+				center: myLatLng,
+				zoom: 15,
+				mapTypeId: google.maps.MapTypeId.HYBRID
+			});
+			var marker = new google.maps.Marker({
+	          position: myLatLng,
+	          map: map,
+					});
+		}
+
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3uIKOpLAoO_gMaxNroliVF8-6RhNb3qk&callback=myMap"></script>
+</section>
+<footer>
+	<p>MAN DOWN BAR &amp; BBQ,TEMPLE BAR DUBLIN 2 IRELAND &emsp; EMAIL: <a href="mailto:mandownbbq@gmail.com">mandownbbq@gmail.com</a>  &copy; MAN DOWN 2017</p>   <!-- &emsp; puts a tab between words-->
+	<div class="social">
+		<!-- Add icon library -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<!-- Add font awesome icons -->
+		<a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+		<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>
+		<a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+		<a href="https://www.stumbleupon.com/" target="_blank" class="fa fa-stumbleupon"></a>
+		<a href="https://www.snapchat.com/" target="_blank" class="fa fa-snapchat"></a>
+	</div>
+</footer>
+</body>
+</html>
