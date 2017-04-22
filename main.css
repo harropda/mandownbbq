@@ -138,7 +138,7 @@ header a:hover{ /*change to orange on hover*/
 }
 #main_section{
     min-height: 800px;
-    background: url("images/wood-background.jpg") no-repeat;
+    /*background: url("images/wood-background.jpg") no-repeat;*/
     background-size: cover;
     background-repeat: no-repeat;
     text-align:center;
