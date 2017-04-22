@@ -97,7 +97,7 @@ header a:hover{ /*change to orange on hover*/
 }
 
 #bar_menu{  /*3 bar menu hidden now - used again in Media Section*/
-	display:hidden;
+	display: hidden;
 	width: 50px;
 	height: 50px;
 	background: url("./images/menuicon_50.png") no-repeat center ;
