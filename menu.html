@@ -7,6 +7,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<!-- Needs SEO - see https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags-->
 	<link rel="stylesheet" href="main.css">
+	<style>
+			.parallax {
+			/* The image used */
+			background-image: url("images/about_bbqpit.jpg");
+			/* Set a specific height */
+			height: 1400px;
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30">
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_60px.jpg" sizes="60x60">
 
@@ -38,6 +51,9 @@
 	</header>
 
 <section id="main_section">  <!-- Use of section tag https://www.w3schools.com/html/html_layout.asp -->
+	<div class="container">
+		<div class="parallax"></div>
+	</div>
 	<div class="container">
 		<h1>Menu</h1>
 		<p>Served 12-9 Mon-Fri</p>
