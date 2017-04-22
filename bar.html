@@ -7,6 +7,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<!-- Needs SEO - see https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags-->
 	<link rel="stylesheet" href="main.css">
+	<style>
+			.parallax {
+			/* The image used */
+			background-image: url("images/beer-bottled.jpg");
+			/* Set a specific height */
+			height: 1400px;
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30">
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_60px.jpg" sizes="60x60">
 	<!--[if lt IE 9]>
@@ -38,6 +51,13 @@
 
 <section id="main_section">  <!-- Use of section tag https://www.w3schools.com/html/html_layout.asp -->
 	<div class="container">
+		<div class="parallax"></div>
+	</div>
+</section>
+<section id="index-gap-small">
+</section>
+<section id="top_gap">
+	<div class="index-message">
 		<h1>Drinks</h1>
 		<p>Bar's open 12-11 Sun-Wed, 12-1 Thu-Sat</p>
 		<div class="menu-sub">
@@ -56,48 +76,42 @@
 			</div>
 			<div class="menu-sub">
 				<h3>Draught Beers</h3>
-				<h4>
-					<ul style="list-style-type:none">
-						<li>   Guinness</li>
-						<li>   Heineken</li>
-						<li>   Bud</li>
-						<li>   Coors</li>
-						<li>   Carlsberg</li>
-						<li>   Smithwicks</li>
-						<li>   </li>
-					</ul>
-				</h4>
+				<ul class="menu-ul" style="list-style-type:none">
+					<li>   Guinness</li>
+					<li>   Heineken</li>
+					<li>   Bud</li>
+					<li>   Coors</li>
+					<li>   Carlsberg</li>
+					<li>   Smithwicks</li>
+					<li>   </li>
+				</ul>
 			</div>
 		</div>
 		<div class="menu-sub">
 			<h2>Spirits</h2>
 			<div class="menu-sub">
 				<h3>Whiskey</h3>
-				<h4>
-					<ul style="list-style-type:none">
-						<li>   Bourbon</li>
-						<li>   Rye</li>
-						<li>   Single Malt</li>
-						<li>   Tennessee</li>
-						<li>   Grain</li>
-						<li>   Single Pot</li>
-						<li>   Irish</li>
-					</ul>
-				</h4>
+				<ul class="menu-ul" style="list-style-type:none">
+					<li>   Bourbon</li>
+					<li>   Rye</li>
+					<li>   Single Malt</li>
+					<li>   Tennessee</li>
+					<li>   Grain</li>
+					<li>   Single Pot</li>
+					<li>   Irish</li>
+				</ul>
 			</div>
 			<div class="menu-sub">
 				<h3>Not Whiskey</h3>
-				<h4>
-					<ul style="list-style-type:none">
-						<li>   Vodka</li>
-						<li>   Gin</li>
-						<li>   Rum</li>
-						<li>   Tequila</li>
-						<li>   Brandy</li>
-						<li>   Liquers</li>
-						<li>   Wines</li>
-					</ul>
-				</h4>
+				<ul class="menu-ul" style="list-style-type:none">
+					<li>   Vodka</li>
+					<li>   Gin</li>
+					<li>   Rum</li>
+					<li>   Tequila</li>
+					<li>   Brandy</li>
+					<li>   Liquers</li>
+					<li>   Wines</li>
+				</ul>
 			</div>
 		</div>
 		<div class="menu-sub">
@@ -112,9 +126,9 @@
 			<h3>Tea/Coffee</h3>
 		</div>
 	</div>
-
 </section>
-
+<section id="index-gap-large">
+</section>
 <section id="opening_hours">
 	<div class="container">
 		<h3>BAR OPEN 7 DAYS A WEEK FROM 12PM TIL LATE - BBQ SERVED 7 DAYS A WEEK FROM 12-9PM</h3>
@@ -126,32 +140,32 @@
 	<div class="slideshow-container">
 	  <div class="mySlides fade">
 	    <div class="numbertext">1 / 6</div>
-	    <img src="images/beer-bottled.jpg" alt="craft beers" style="width:100%">
-	    <div class="text">Craft Beers</div>
+	    <img src="images/bar_ss_1.jpg" alt="bourbon straight up" style="width:100%">
+	    <div class="text">bourbon straight up</div>
 	  </div>
 
 	  <div class="mySlides fade">
 	    <div class="numbertext">2 / 6</div>
-	    <img src="images/whiskey.jpg" alt="bourbon" style="width:100%">
-	    <div class="text">Bourbon! Proper BBQ drinkin'</div>
+	    <img src="images/bar_ss_2.jpg" alt="NY Sour" style="width:100%">
+	    <div class="text">NY Sour</div>
 	  </div>
 
 	  <div class="mySlides fade">
 	    <div class="numbertext">3 / 6</div>
-	    <img src="images/recipe-ny-sour.jpg" alt="NY sour" style="width:100%">
-	    <div class="text">New York Sour</div>
+	    <img src="images/bar_ss_3.jpg" alt="Whiskey, all dressed up" style="width:100%">
+	    <div class="text">Whiskey, all dressed up</div>
 	  </div>
 
 	  <div class="mySlides fade">
 	    <div class="numbertext">4 / 6</div>
-	    <img src="images/whiskycocktails.jpg" alt="whiskey cocktails" style="width:100%">
-	    <div class="text">Whiskey Cocktails</div>
+	    <img src="images/bar_ss_4.jpg" alt="Gin with big ideas" style="width:100%">
+	    <div class="text">Gin with big ideas</div>
 	  </div>
 
 	  <div class="mySlides fade">
 	    <div class="numbertext">5 / 6</div>
-	    <img src="images/irish-legend.jpg" alt="irish legend" style="width:100%">
-	    <div class="text">The Irish Legend</div>
+	    <img src="images/bar_ss_5.jpg" alt="line-up" style="width:100%">
+	    <div class="text">The usual suspects</div>
 	  </div>
 
 	  <div class="mySlides fade">
