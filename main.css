@@ -68,10 +68,6 @@ header a{
   font-size: 24px;
 }
 
-header ul{
-  padding: 0;
-  margin: 0;
-}
 header li{
   float:left;
   padding: 0 10px 0 10px;
@@ -96,7 +92,7 @@ header a:hover{ /*change to orange on hover*/
 }
 
 #bar_menu{  /*3 bar menu hidden now - used again in Media Section*/
-	display:hidden;
+	display: none;
 	width: 50px;
 	height: 50px;
 	background: url("./images/menuicon_50.png") no-repeat center ;
@@ -138,7 +134,27 @@ background-size: cover;
 .index-message h1{
     font-size: 64px;
 }
+.index-message h2{
+    font-size: 32px;
+}
 .index-message p{
+    font-size: 24px;
+}
+.index-message-white{
+  max-height: 120px;
+  padding: 0;
+  margin: 0;
+  color:#000000;
+  text-shadow: -1px 0 #CF5300, 0 1px #CF5300, 1px 0 #CF5300, 0 -1px #CF5300;
+  text-align: center;
+}
+.index-message-white h1{
+    font-size: 64px;
+}
+.index-message-white h2{
+    font-size: 32px;
+}
+.index-message-white p{
     font-size: 24px;
 }
 #top-gap{
@@ -151,12 +167,12 @@ background-size: cover;
   padding: 0;
   margin: 0;
 }
-#index-gap-small{
+.index-gap-small{
   min-height: 40px;
   padding: 0;
   margin: 0;
 }
-#index-gap-large{
+.index-gap-large{
   min-height: 400px;
   padding: 0;
   margin: 0;
@@ -175,7 +191,7 @@ background-size: cover;
     font-size: 24px;
 }
 
-@media only screen and (max-width: 1160px){
+@media screen and (max-width: 1160px){
     .menu{
         /* float: right; */
         margin-left: auto;
@@ -217,7 +233,20 @@ background-size: cover;
     .index-message h1{
         font-size: 24px;
     }
+    .index-message h2{
+        font-size: 20px;
+    }
     .index-message p{
+        font-size: 16px;
+    }
+
+    .index-message-white h1{
+        font-size: 24px;
+    }
+    .index-message-white h2{
+        font-size: 20px;
+    }
+    .index-message-white p{
         font-size: 16px;
     }
     #index-gap{
@@ -227,7 +256,7 @@ background-size: cover;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     .menu{
         /* float: right; */
         margin-left: auto;
@@ -267,9 +296,22 @@ background-size: cover;
       text-align: center;
     }
     .index-message h1{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .index-message h2{
+        font-size: 16px;
     }
     .index-message p{
+        font-size: 12px;
+    }
+
+    .index-message-white h1{
+        font-size: 18px;
+    }
+    .index-message-white h2{
+        font-size: 16px;
+    }
+    .index-message-white p{
         font-size: 12px;
     }
     #index-gap{
@@ -325,7 +367,7 @@ background-size: cover;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   .fa {
      padding: 0.25%;
      font-size: 0.25em;
@@ -346,7 +388,7 @@ background-size: cover;
   background-color: #CF5300;
   text-align: center;
 }
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   #opening_hours{
     font-size: 12px;
   }
@@ -365,22 +407,84 @@ background-size: cover;
   border-bottom: #000000 2px solid;
 }
 
-#reviews_section .review{ /*Splits each review into half the screen, then floats all 4 left for responsivness*/
+#reviews_section .review_style1{ /*Splits each review into half the screen, then floats all 4 left for responsivness*/
   float:left;
   width:50%;
 }
-
+#reviews_section .review_style2{ /*Splits each review into half the screen, then floats all 4 left for responsivness*/
+  float:left;
+  width:50%;
+  background-color: #CF5300;
+}
+/*
 #reviews_section h4{
   padding-left: 40px;
   font-size:18px;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+*/
 #reviews_section p{
   padding: 0 20px 0 20px; /*takes the text in from th div edges*/
+}
+.review_style1 {
+  color: #FFFFFF;
+  text-shadow: -1px 0 #CF5300, 0 1px #CF5300, 1px 0 #CF5300, 0 -1px #CF5300;
+}
+.review_style1 h4{
+  padding-left: 40px;
+  font-size:1.4em;
+}
+.review_style1 p{
+  padding: 0 20px 0 20px; /*takes the text in from the div edges*/
+  font-size:1em;
+}
+.review_style2 {
+  color: #000000;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+.review_style2 h4{
+  padding-left: 40px;
+  font-size:1.4em;
+}
+.review_style2 p{
+  padding: 0 20px 0 20px; /*takes the text in from th div edges*/
+  font-size:1em;
+}
 
-/*@keyframes changeLetter {
+@media screen and (max-width: 1160px){
+  .review_style1 h4{
+    font-size:1em;
+  }
+  .review_style1 p{
+    font-size:0.7em;
+  }
+  .review_style2 h4{
+    font-size:1em;
+  }
+  .review_style2 p{
+    font-size:0.7em;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .review_style1 h4{
+    font-size:0.8em;
+    text-shadow: none;
+  }
+  .review_style1 p{
+    font-size:0.5em;
+    text-shadow: none;
+  }
+  .review_style2 h4{
+    font-size:0.8em;
+    text-shadow: none;
+  }
+  .review_style2 p{
+    font-size:0.5em;
+    text-shadow: none;
+  }
+}
+/*@keyframes changeText {
   0%{
     content: "I’ve eaten here a few times and its always fantastic. Great little bar with lovely staff and a great atmosphere. Its a small menu, but they have nailed it. Everything is gorgeous and its all quick and very reasonably priced. Pat. Galway."
   }
@@ -394,7 +498,7 @@ background-size: cover;
 }
 
 .review1::after{
-  animation: changeLetter 3s linear infinite alternate;
+  animation: changeText 3s linear infinite alternate;
 }*/
 /**********************FOOTER STARTS HERE***********************/
 footer{
@@ -411,12 +515,12 @@ footer p{
     margin: 0;
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   footer {
     font-size: 10px;
   }
 }
-/**********************MEDIA SECTION STARTS HERE***********************/
+/**********************MEDIA SECTION FOR THE HEADER STARTS HERE***********************/
 /*https://www.w3schools.com/css/css3_mediaqueries.asp*/
 @media screen and (max-width: 1350px){ /*Below 1350px the page will re-size/re-shape the header to keep it tidy*/
 
@@ -428,11 +532,11 @@ footer p{
   header a{
     color:#FFFFFF;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
   }
   .current_page{
     color: #CF5300;
-    font-size: 18px;
+    font-size: 20px;
   }
 
 
@@ -462,24 +566,24 @@ header nav{
 }
 
 
-@media screen and (max-width: 960px){ /*Below 1080px the page will re-size/re-shape the header to keep it tidy*/
+@media screen and (max-width: 920px){ /*Below 1080px the page will re-size/re-shape the header to keep it tidy*/
 header #restaurant_name h2{
-  padding: 15px 0 0 20px;
+  padding: 15px 0 0 50px;
 }
 
 header nav{
   float: left;
-  padding: 5px 0 0 160px;
+  padding: 5px 0 0 190px;
   margin:0;
 
 }
 
 #logo{  /*resize logo with new smaller image for a smaller screen size*/
   float: left;
-  width: 75px;
-  height:60px;
+  width: 65px;
+  height:50px;
   background: url("./images/bbq_logo_66.jpg") no-repeat center;
-  padding: 20px 0 0 100px;
+  padding: 30px 0 0 100px;
 }
 }
 
@@ -487,7 +591,7 @@ header nav{
 
 header #restaurant_name h2{
   font-size: 24px;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0 30px;
   float: left;
 }
 #logo{
@@ -500,7 +604,7 @@ header #restaurant_name h2{
 /*Could be done without image using div's and coloured background https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
 #bar_menu{/*3 bar menu for mobile view*/
   float:right;
-  padding:10px 0 0 0;
+  padding:10px 0 0 80px;
   display: inline-block; /*makes 3 bar menu visible*/
 }
 
@@ -508,16 +612,15 @@ header nav{
   margin-left: 20px;
   padding: 20px 0 0 0;
 }
-nav ul, nav:active ul{
+nav ul{
   display: none; /*hides the nav list until hovered upon*/
   position: absolute;
   margin: 40px 60px 0 0; /*Moves the entire dropdown*/
-  padding: 10px 0px 20px 10px;
+  padding: 10px 0px 20px 10px; /*centres nav list in the window*/
   background:#000000;
-  right:5px;
+  right:5px; /*set the right edge to 5px to the left of the right edge of its nearest positioned ancestor - necessary on some resolutions to take nav window off the right hand scroll bar*/
   border: 1px solid #CF5300;
   width:25%; /*size of pop-up menu */
-  z-index: 1;/*z-index gives preference to an element, putting it to the front*/
 }
 nav:hover ul{
   display:block; /*displays nav on hover*/
@@ -558,16 +661,15 @@ header nav{
   margin-left: 20px;
   padding: 20px 0 0 0;
 }
-nav ul, nav:active ul{
+nav ul{
   display: none; /*hides the nav list until hovered upon*/
   position: absolute;
-  margin: 40px 30px 0 0;
+  margin: 50px 60px 0 0;
   padding: 10px 0px 20px 10px;
   background:#000000;
   right:5px;
   border: 1px solid #CF5300;
-  width:34%; /*size of pop-up menu */
-  z-index: 1;/*z-index gives preference to an element, putting it to the front*/
+  width:40%; /*size of pop-up menu */
 }
 nav:hover ul{
   display:block; /*displays nav on hover*/
@@ -584,7 +686,7 @@ nav ul li{
 /**********************MEDIA SECTION ENDS HERE***********************/
 /*********************************************************************************INDEX PAGE ENDS***********************************/
 
-/**********************MENU SECTION STARTS HERE***********************/
+/**********************MENU/BAR SECTION STARTS HERE***********************/
 
 #menu_section{
     min-height: 300px;
@@ -628,8 +730,18 @@ nav ul li{
   display: inline-block;
   vertical-align: middle;
 }
-
-@media only screen and (max-width: 600px){
+.menu-parallax {
+  /* The image used */
+  background-image: url("images/burning-coal.jpg");
+  /* Set a specific height */
+  height: 1400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 600px){
     .menu{
         /* float: right; */
         margin-left: auto;
@@ -641,26 +753,27 @@ nav ul li{
     }
     #menu_section h1{
         margin: 1% 0 1% 0;
-        font-size: 24px;
+        font-size: 1.8em;
     }
 
     #menu_section h2{
         margin: 10% 0 10% 0;
-        font-size: 20px;
+        font-size: 1.5em;
     }
 
     #menu_section h2{
-        font-size: 18px;
+        font-size: 1em;
     }
 
     #menu_section h3{
-        font-size: 14px;
+        font-size: 0.7em;
     }
 }
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 40%;
+  width: auto;
   height: auto;
   position: relative;
   margin: auto;
@@ -684,6 +797,7 @@ nav ul li{
     left: 0;
     top: 0;
     max-width: 100%;
+    max-height: 300px;
     height: auto;
     opacity: 1;
 }
@@ -706,9 +820,19 @@ nav ul li{
   to {opacity: 1}
 }
 
+.parallax_bar {
+  /* The image used */
+  background-image: url("images/beer-bottled.jpg");
+  /* Set a specific height */
+  height: 1500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
 
-
-/******************************************************MENU PAGE ENDS***********************************/
+/******************************************************MENU/BAR PAGE ENDS***********************************/
 
 /*****************************************************RESERVATIONS PAGE STARTS***********************************/
 /**********************MAIN RESERVATIONS SECTION STARTS HERE***********************/
@@ -847,34 +971,27 @@ button{
 
 /***********************************************************ABOUT.HTML STARTS HERE****************************************************************/
 .parallax_about {
-/* The image used */
-background-image: url("images/about_bbqinterior.jpg");
+  /* The image used */
+  background-image: url("images/about_bbqinterior.jpg");
 
-/* Set a specific height */
-height: 1400px;
+  /* Set a specific height */
+  height: 2600px;
 
-/* Create the parallax scrolling effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #map-section{
   min-height: 40px;
+  text-align: center;
 }
 #map{
   margin: auto;
 }
 
-#about_pic{
-    min-height: 800px;
-    background: url("images/about_bbqinterior.jpg") no-repeat;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align:center;
-    color: #CF5300;
-}
 
 #about_divider1 h2{
   margin: 0;
@@ -892,7 +1009,6 @@ background-size: cover;
   display:inline-block;
   width:100%;
   padding: 0;
-  margin: 0;
   min-width: 320px;
   background-color: #CF5300;
 }
@@ -909,12 +1025,11 @@ background-size: cover;
   min-height: 300px;
   min-width: 300px;
   padding: 0;
-  margin: 0;
   float:left;
  }
 
  .half{
-   width: 50%;
+   width: 48%;
  }
 
  .quarter{
@@ -922,9 +1037,10 @@ background-size: cover;
  }
 #box1 {
   float: left;
+  padding: 1%;
 }
 #box2 {
-  /*background: url("images/about_food.jpg");
+  background: url("images/about_food.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;*/
@@ -940,6 +1056,8 @@ background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  float: left;
+  clear:right;
 }
 
 #box4 {
@@ -951,6 +1069,7 @@ background-size: cover;
 }
 #box5 {
   float: left;
+  padding: 1%;
 
 }
 #box6 {
@@ -958,8 +1077,37 @@ background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  float: right;
+  float: left;
 }
+
+@media screen and (max-width: 1216px){ /*tidy about page on lower resolution*/
+
+.About_Box {
+  min-height: 250px;
+}
+
+  #about_container1{
+    padding-bottom: 80px;
+  }
+
+  #about_container2{
+    padding-bottom: 80px;
+  }
+  #box1{
+    padding: 4% 1% 0 1%;
+  }
+  #box5{
+    padding: 10% 1% 0 1%;
+  }
+  .half{
+    width:96%;
+  }
+  .quarter{
+    width:50%;
+  }
+
+}
+
 
 /* HOME PAGE BACKGROUND SLIDESHOW
 .cb-slideshow,
