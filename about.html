@@ -4,26 +4,13 @@
 	<meta charset="UTF-8">
 	<title>MAN DOWN BBQ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Needs SEO - see https://searchenginewatch.com/sew/how-to/2067564/how-to-use-html-meta-tags-->
 	<link rel="stylesheet" href="main.css">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<style>
-			.parallax {
-			/* The image used */
-			background-image: url("images/about_bbqinterior.jpg");
-
-			/* Set a specific height */
-			height: 1400px;
-
-			/* Create the parallax scrolling effect */
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-	</style>
-	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30">
+	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30"> <!--Browser Tab Icons - displayed left of the Title-->
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_60px.jpg" sizes="60x60">
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
 <body>
@@ -47,7 +34,7 @@
 	</header>
 
 	<section id="index_main_section">  <!-- Use of section tag https://www.w3schools.com/html/html_layout.asp -->
-			<div class="parallax"></div>
+			<div class="parallax_about"></div>
 	</section>
 	<section id="index-gap-small">
 	</section>
@@ -62,7 +49,7 @@
 		<p>So what’s our story? We wanted to bring the finest BBQ to Dublin, and to open up a place that was like nothing else in Ireland. We wanted to bring all that smoky BBQ flavour right to your doorstep. The very first step was to send our Head Chef, Oliver Byrne, stateside. He traveled to Memphis and spent weeks learning the craft of BBQing. You can learn how to cook it but to make it taste the best you’ve gotta have the best – so we picked up our secret weapon, our Southern Pride Smoker. Southern Pride have been making smokers since 1973, this experience and craftsmanship goes into every smoker they produce and with this assurance to quality, we knew we were onto something! The Southern Pride Smoker was so big we couldn’t get it through the door of our Wellington Quay restaurant.  &darr;</p>
 		</div>
   <div id='box2' class='About_Box quarter'>
-		 <img src="images/about_food.jpg" alt="food"> 
+		 <img src="images/about_food.jpg" alt="food">
 	</div>
 
   <div id='box3' class='About_Box quarter'>
@@ -86,7 +73,7 @@
 </div>
 
 </section>
-<section id="map-section">
+<section id="map-section"> <!--3rd party - Taken from https://www.w3schools.com/graphics/google_maps_intro.asp and adapted-->
 		<div id="map" style="width:400px;height:400px;">My map will go here</div>
 		<script>
 		function myMap() {

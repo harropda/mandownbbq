@@ -5,36 +5,23 @@
 	<title>MAN DOWN BBQ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
 	<meta name="description" content="The #1 BBQ bar and restaurant in Dublin, Located in Temple Bar">
-  <meta name="keywords" content="BBQ Food, Bar open until late, BBQ restaurant, Whiskey Bar">
+  <meta name="keywords" content="MAN DOWN BBQ, BBQ Food, Bar open until late, BBQ restaurant, Whiskey Bar">
   <meta name="author" content="Peter Kelly David Harrop">
 	<link rel="stylesheet" href="main.css">
-	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-	<style>
-			.parallax {
-			/* The image used */
-			background-image: url("images/about_bbqinterior.jpg");
-
-			/* Set a specific height */
-			height: 1000px;
-
-			/* Create the parallax scrolling effect */
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-		}
-	</style>
-	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30">
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet"> <!--link to font used-->
+	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30"> <!--Browser Tab Icons - displayed left of the Title-->
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_60px.jpg" sizes="60x60">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 		<!-- Add icon library for social media -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 </head>
 
-<!-- Where to put scripts
-	http://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup-->
+<!-- Where to put scripts -http://stackoverflow.com/questions/436411/where-should-i-put-script-tags-in-html-markup-->
 <body>
 	<header>
 		<div class="container">
-			<a href="index.html" id="logo"></a>
+			<a href="index.html" id="logo"></a> <!--logo is clickable button always going back to index.html-->
 			<div id="restaurant_name">
 				<h2>MAN DOWN BAR &amp; BBQ</h2>
 			</div>
@@ -53,11 +40,11 @@
 
 <section id="index_main_section">  <!-- Use of section tag https://www.w3schools.com/html/html_layout.asp -->
 	<div class="container">
-		<div class="parallax"></div>
+		<div class="parallax_index"></div>
 	</div>
 </section>
-<section id="index-gap">
-</section>
+<div class="index-gap">
+</div>
 <section id="top_gap">
 	<div class="index-message">
 		<h1>MAN DOWN BAR &amp; BBQ</h1>
@@ -67,16 +54,16 @@
 		<h4>Read some of our reviews below</h4>
 	</div>
 </section>
-<section id="index-gap">
-</section>
+<div class="index-gap">
+</div>
 <section id="opening_hours">
 	<div class="container">
 
 		<h3>≈ BAR OPEN 7 DAYS A WEEK FROM 12PM TIL LATE - BBQ SERVED 7 DAYS A WEEK FROM 12-9PM ≈</h3>
 	</div>
 </section>
-<section id="index-gap">
-</section>
+<div class="index-gap">
+</div>
 <section id="review_divider">
 	<div class="container">
 		<h2>REVIEWS</h2>
@@ -105,9 +92,7 @@
 <footer>
 	<p>MAN DOWN BAR &amp; BBQ,TEMPLE BAR DUBLIN 2 IRELAND &emsp;  EMAIL: <a href="mailto:mandownbbq@gmail.com">mandownbbq@gmail.com</a>   &emsp;    &copy; MAN DOWN 2017</p>   <!-- &emsp; puts a tab between words-->
 	<div class="social">
-		<!-- Add icon library -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+		<!-- 3rd party - https://www.w3schools.com/howto/howto_css_social_media_buttons.asp -->
 		<!-- Add font awesome icons -->
 		<a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
 		<a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a>

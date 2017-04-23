@@ -3,7 +3,7 @@
 /*position:fixed - in header is used to keep it on screen even when scrolling*/
 /*media were necessary to keep the header tidy on reducing width*/
 
-*{
+*{ /*reset all tags to 0 padding and margin*/
   padding: 0;
   margin: 0;
 }
@@ -19,16 +19,15 @@ body {
 }
 .container {
 	width: 100%; /*Set the width of the entire website here */
-
-  overflow: hidden;
+  overflow: hidden; /*prevent scroll bars from appearing*/
 }
 .container_90 {
-	width: 90%; /*Set the width of the entire website here */
+	width: 90%; /*Set the width to use 90% of the page */
 	margin-right: auto;
 	margin-left: auto; /* Margin-left and right are set to auto to center the container */
   overflow: hidden;
 }
-
+/*reusable style classes with contrasting styles*/
 .style1{
   background-color: #CF5300;
   color:#000000;
@@ -38,7 +37,7 @@ body {
   color:#CF5300;
 }
 
-/******************************************INDEX PAGE STARTS***********************************/
+/********************************************************************INDEX PAGE STARTS*****************************************************/
 /**********************HEADER STARTS HERE***********************/
 header{
 	color: #CF5300;
@@ -102,10 +101,26 @@ header a:hover{ /*change to orange on hover*/
 	height: 50px;
 	background: url("./images/menuicon_50.png") no-repeat center ;
 }
-/**********************HEADER END HERE***********************/
+/**********************HEADER ENDS HERE***********************/
 
 
 /**********************MAIN SECTION STARTS HERE***********************/
+/*parallax scrolling used on index.html*/
+.parallax_index {
+/* The image used */
+background-image: url("images/about_bbqinterior.jpg");
+
+/* Set a specific height */
+height: 1000px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
 #index_main_section{
     max-height: 200px;
     text-align:center;
@@ -131,7 +146,7 @@ header a:hover{ /*change to orange on hover*/
   padding: 0;
   margin: 0;
 }
-#index-gap{
+.index-gap{
   min-height: 100px;
   padding: 0;
   margin: 0;
@@ -483,7 +498,7 @@ header #restaurant_name h2{
   padding: 20px 0 0 10px;
 }
 /*Could be done without image using div's and coloured background https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
-#bar_menu{
+#bar_menu{/*3 bar menu for mobile view*/
   float:right;
   padding:10px 0 0 0;
   display: inline-block; /*makes 3 bar menu visible*/
@@ -494,9 +509,9 @@ header nav{
   padding: 20px 0 0 0;
 }
 nav ul, nav:active ul{
-  display: none;
+  display: none; /*hides the nav list until hovered upon*/
   position: absolute;
-  margin: 40px 30px 0 0;
+  margin: 40px 60px 0 0; /*Moves the entire dropdown*/
   padding: 10px 0px 20px 10px;
   background:#000000;
   right:5px;
@@ -505,7 +520,7 @@ nav ul, nav:active ul{
   z-index: 1;/*z-index gives preference to an element, putting it to the front*/
 }
 nav:hover ul{
-  display:block;
+  display:block; /*displays nav on hover*/
 }
 nav li{
   text-align:left;
@@ -520,7 +535,7 @@ nav ul li{
 @media screen and (max-width: 500px){/*Below 500px the page will re-size/re-shape the header to keep it tidy*/
 
 header #restaurant_name h2{
-  display: none;
+  display: none; /*make heading disappear on mobile*/
   font-size: 24px;
   padding: 20px 0 0 0;
   float: left;
@@ -544,18 +559,18 @@ header nav{
   padding: 20px 0 0 0;
 }
 nav ul, nav:active ul{
-  display: none;
+  display: none; /*hides the nav list until hovered upon*/
   position: absolute;
   margin: 40px 30px 0 0;
   padding: 10px 0px 20px 10px;
   background:#000000;
   right:5px;
   border: 1px solid #CF5300;
-  width:32%; /*size of pop-up menu */
+  width:34%; /*size of pop-up menu */
   z-index: 1;/*z-index gives preference to an element, putting it to the front*/
 }
 nav:hover ul{
-  display:block;
+  display:block; /*displays nav on hover*/
 }
 nav li{
   text-align:left;
@@ -567,7 +582,7 @@ nav ul li{
 }
 }
 /**********************MEDIA SECTION ENDS HERE***********************/
-/******************************************INDEX PAGE ENDS***********************************/
+/*********************************************************************************INDEX PAGE ENDS***********************************/
 
 /**********************MENU SECTION STARTS HERE***********************/
 
@@ -691,11 +706,11 @@ nav ul li{
   to {opacity: 1}
 }
 
-/**********************MENUS START HERE***********************/
 
-/******************************************MENU PAGE ENDS***********************************/
 
-/******************************************RESERVATIONS PAGE STARTS***********************************/
+/******************************************************MENU PAGE ENDS***********************************/
+
+/*****************************************************RESERVATIONS PAGE STARTS***********************************/
 /**********************MAIN RESERVATIONS SECTION STARTS HERE***********************/
 
 #reservations_section{
@@ -759,6 +774,12 @@ nav ul li{
 button{
   cursor: pointer;
 }
+/*trying to make button work*/
+/* #enquire{
+  width:15%;
+  display:none;
+  border: solid 1px #000000;
+} */
 
 /***************************Change some parts of the Reservations page below 960px********/
 @media screen and (max-width: 960px){
@@ -825,6 +846,20 @@ button{
 /******************************************RESERVATIONS PAGE ENDS***********************************/
 
 /***********************************************************ABOUT.HTML STARTS HERE****************************************************************/
+.parallax_about {
+/* The image used */
+background-image: url("images/about_bbqinterior.jpg");
+
+/* Set a specific height */
+height: 1400px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 #map-section{
   min-height: 40px;
 }
