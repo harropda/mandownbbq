@@ -138,7 +138,27 @@ background-size: cover;
 .index-message h1{
     font-size: 64px;
 }
+.index-message h2{
+    font-size: 32px;
+}
 .index-message p{
+    font-size: 24px;
+}
+.index-message-white{
+  max-height: 120px;
+  padding: 0;
+  margin: 0;
+  color:#000000;
+  text-shadow: -1px 0 #CF5300, 0 1px #CF5300, 1px 0 #CF5300, 0 -1px #CF5300;
+  text-align: center;
+}
+.index-message-white h1{
+    font-size: 64px;
+}
+.index-message-white h2{
+    font-size: 32px;
+}
+.index-message-white p{
     font-size: 24px;
 }
 #top-gap{
@@ -217,7 +237,20 @@ background-size: cover;
     .index-message h1{
         font-size: 24px;
     }
+    .index-message h2{
+        font-size: 20px;
+    }
     .index-message p{
+        font-size: 16px;
+    }
+
+    .index-message-white h1{
+        font-size: 24px;
+    }
+    .index-message-white h2{
+        font-size: 20px;
+    }
+    .index-message-white p{
         font-size: 16px;
     }
     #index-gap{
@@ -267,9 +300,22 @@ background-size: cover;
       text-align: center;
     }
     .index-message h1{
-        font-size: 20px;
+        font-size: 18px;
+    }
+    .index-message h2{
+        font-size: 16px;
     }
     .index-message p{
+        font-size: 12px;
+    }
+
+    .index-message-white h1{
+        font-size: 18px;
+    }
+    .index-message-white h2{
+        font-size: 16px;
+    }
+    .index-message-white p{
         font-size: 12px;
     }
     #index-gap{
@@ -365,21 +411,83 @@ background-size: cover;
   border-bottom: #000000 2px solid;
 }
 
-#reviews_section .review{ /*Splits each review into half the screen, then floats all 4 left for responsivness*/
+#reviews_section .review_style1{ /*Splits each review into half the screen, then floats all 4 left for responsivness*/
   float:left;
   width:50%;
 }
-
+#reviews_section .review_style2{ /*Splits each review into half the screen, then floats all 4 left for responsivness*/
+  float:left;
+  width:50%;
+  background-color: #CF5300;
+}
+/*
 #reviews_section h4{
   padding-left: 40px;
   font-size:18px;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+*/
 #reviews_section p{
   padding: 0 20px 0 20px; /*takes the text in from th div edges*/
+}
+.review_style1 {
+  color: #FFFFFF;
+  text-shadow: -1px 0 #CF5300, 0 1px #CF5300, 1px 0 #CF5300, 0 -1px #CF5300;
+}
+.review_style1 h4{
+  padding-left: 40px;
+  font-size:1.4em;
+}
+.review_style1 p{
+  padding: 0 20px 0 20px; /*takes the text in from the div edges*/
+  font-size:1em;
+}
+.review_style2 {
+  color: #000000;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
+.review_style2 h4{
+  padding-left: 40px;
+  font-size:1.4em;
+}
+.review_style2 p{
+  padding: 0 20px 0 20px; /*takes the text in from th div edges*/
+  font-size:1em;
+}
 
+@media only screen and (max-width: 1160px){
+  .review_style1 h4{
+    font-size:1em;
+  }
+  .review_style1 p{
+    font-size:0.7em;
+  }
+  .review_style2 h4{
+    font-size:1em;
+  }
+  .review_style2 p{
+    font-size:0.7em;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .review_style1 h4{
+    font-size:0.8em;
+    text-shadow: none;
+  }
+  .review_style1 p{
+    font-size:0.5em;
+    text-shadow: none;
+  }
+  .review_style2 h4{
+    font-size:0.8em;
+    text-shadow: none;
+  }
+  .review_style2 p{
+    font-size:0.5em;
+    text-shadow: none;
+  }
+}
 /*@keyframes changeLetter {
   0%{
     content: "I’ve eaten here a few times and its always fantastic. Great little bar with lovely staff and a great atmosphere. Its a small menu, but they have nailed it. Everything is gorgeous and its all quick and very reasonably priced. Pat. Galway."
@@ -584,7 +692,7 @@ nav ul li{
 /**********************MEDIA SECTION ENDS HERE***********************/
 /*********************************************************************************INDEX PAGE ENDS***********************************/
 
-/**********************MENU SECTION STARTS HERE***********************/
+/**********************MENU/BAR SECTION STARTS HERE***********************/
 
 #menu_section{
     min-height: 300px;
@@ -628,7 +736,17 @@ nav ul li{
   display: inline-block;
   vertical-align: middle;
 }
-
+.menu-parallax {
+  /* The image used */
+  background-image: url("images/burning-coal.jpg");
+  /* Set a specific height */
+  height: 1400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 @media only screen and (max-width: 600px){
     .menu{
         /* float: right; */
@@ -641,20 +759,20 @@ nav ul li{
     }
     #menu_section h1{
         margin: 1% 0 1% 0;
-        font-size: 24px;
+        font-size: 1.8em;
     }
 
     #menu_section h2{
         margin: 10% 0 10% 0;
-        font-size: 20px;
+        font-size: 1.5em;
     }
 
     #menu_section h2{
-        font-size: 18px;
+        font-size: 1em;
     }
 
     #menu_section h3{
-        font-size: 14px;
+        font-size: 0.7em;
     }
 }
 
@@ -706,9 +824,19 @@ nav ul li{
   to {opacity: 1}
 }
 
+.parallax_bar {
+  /* The image used */
+  background-image: url("images/beer-bottled.jpg");
+  /* Set a specific height */
+  height: 1400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-size: cover;
+}
 
-
-/******************************************************MENU PAGE ENDS***********************************/
+/******************************************************MENU/BAR PAGE ENDS***********************************/
 
 /*****************************************************RESERVATIONS PAGE STARTS***********************************/
 /**********************MAIN RESERVATIONS SECTION STARTS HERE***********************/
@@ -847,17 +975,17 @@ button{
 
 /***********************************************************ABOUT.HTML STARTS HERE****************************************************************/
 .parallax_about {
-/* The image used */
-background-image: url("images/about_bbqinterior.jpg");
+  /* The image used */
+  background-image: url("images/about_bbqinterior.jpg");
 
-/* Set a specific height */
-height: 1400px;
+  /* Set a specific height */
+  height: 1400px;
 
-/* Create the parallax scrolling effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #map-section{
