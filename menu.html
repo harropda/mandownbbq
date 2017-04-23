@@ -7,6 +7,19 @@
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Add icon library for social media -->
+	<style>
+			.parallax {
+			/* The image used */
+			background-image: url("images/burning-coal.jpg");
+			/* Set a specific height */
+			height: 1400px;
+			/* Create the parallax scrolling effect */
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	</style>
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_30px.jpg" sizes="30x30"> <!--Browser Tab Icons - displayed left of the Title-->
 	<link rel="icon" type="image/jpg" href="images/BBQCHEF_60px.jpg" sizes="60x60">
 
@@ -38,12 +51,15 @@
 	</header>
 
 <section id="main_section">  <!-- Use of section tag https://www.w3schools.com/html/html_layout.asp -->
-	<h6>.</h6>
+	<h6></h6>
 	<div class="container">
-		<div class="menu-parallax"></div>
+		<div class="parallax"></div>
 	</div>
 </section>
-
+<!--
+<section id="index-gap-small">
+</section>
+-->
 <section id="top-gap">
 	<div class="index-message">
 		<h1>Menu</h1>
@@ -78,8 +94,8 @@
 			</div>
 	</div>
 </section>
-<section class="index-gap-small">
-	<h6>.</h6>
+<section id="index-gap-large">
+	<h6></h6>
 </section>
 <section id="opening_hours">
 	<div class="container">
