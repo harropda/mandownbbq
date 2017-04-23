@@ -96,7 +96,7 @@ header a:hover{ /*change to orange on hover*/
 }
 
 #bar_menu{  /*3 bar menu hidden now - used again in Media Section*/
-	display:hidden;
+	display: none;
 	width: 50px;
 	height: 50px;
 	background: url("./images/menuicon_50.png") no-repeat center ;
@@ -195,7 +195,7 @@ background-size: cover;
     font-size: 24px;
 }
 
-@media only screen and (max-width: 1160px){
+@media screen and (max-width: 1160px){
     .menu{
         /* float: right; */
         margin-left: auto;
@@ -260,7 +260,7 @@ background-size: cover;
     }
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     .menu{
         /* float: right; */
         margin-left: auto;
@@ -371,7 +371,7 @@ background-size: cover;
   color: white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   .fa {
      padding: 0.25%;
      font-size: 0.25em;
@@ -392,7 +392,7 @@ background-size: cover;
   background-color: #CF5300;
   text-align: center;
 }
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   #opening_hours{
     font-size: 12px;
   }
@@ -455,7 +455,7 @@ background-size: cover;
   font-size:1em;
 }
 
-@media only screen and (max-width: 1160px){
+@media screen and (max-width: 1160px){
   .review_style1 h4{
     font-size:1em;
   }
@@ -470,7 +470,7 @@ background-size: cover;
   }
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   .review_style1 h4{
     font-size:0.8em;
     text-shadow: none;
@@ -488,7 +488,7 @@ background-size: cover;
     text-shadow: none;
   }
 }
-/*@keyframes changeLetter {
+/*@keyframes changeText {
   0%{
     content: "I’ve eaten here a few times and its always fantastic. Great little bar with lovely staff and a great atmosphere. Its a small menu, but they have nailed it. Everything is gorgeous and its all quick and very reasonably priced. Pat. Galway."
   }
@@ -502,7 +502,7 @@ background-size: cover;
 }
 
 .review1::after{
-  animation: changeLetter 3s linear infinite alternate;
+  animation: changeText 3s linear infinite alternate;
 }*/
 /**********************FOOTER STARTS HERE***********************/
 footer{
@@ -519,7 +519,7 @@ footer p{
     margin: 0;
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
   footer {
     font-size: 10px;
   }
@@ -747,7 +747,7 @@ nav ul li{
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     .menu{
         /* float: right; */
         margin-left: auto;
