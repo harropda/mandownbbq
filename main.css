@@ -47,6 +47,7 @@ header{
   padding: 10px 0 0 0;
   width:100%;
   position: fixed; /*keeps header on screen all the time*/
+  z-index: 501; /*needed to solve a problem with the google map being on top of the header when scrolling*/
 }
 #logo{
 	float: left;
@@ -975,7 +976,7 @@ button{
   background-image: url("images/about_bbqinterior.jpg");
 
   /* Set a specific height */
-  height: 2600px;
+  height: 1850px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -987,8 +988,13 @@ button{
 #map-section{
   min-height: 40px;
   text-align: center;
+  background: url("images/about_bbqinterior.jpg") 0 -330px;
+  background-repeat: no-repeat;
+
+  background-size: cover;
 }
 #map{
+  z-index: 500;
   margin: auto;
 }
 
