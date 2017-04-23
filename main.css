@@ -171,12 +171,12 @@ background-size: cover;
   padding: 0;
   margin: 0;
 }
-#index-gap-small{
+.index-gap-small{
   min-height: 40px;
   padding: 0;
   margin: 0;
 }
-#index-gap-large{
+.index-gap-large{
   min-height: 400px;
   padding: 0;
   margin: 0;
