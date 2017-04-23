@@ -15,7 +15,6 @@ body {
     margin: 0;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
     /*background-color: #000000;*/
-
 }
 .container {
 	width: 100%; /*Set the width of the entire website here */
@@ -976,7 +975,7 @@ button{
   background-image: url("images/about_bbqinterior.jpg");
 
   /* Set a specific height */
-  height: 1850px;
+  height: 2600px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -988,10 +987,6 @@ button{
 #map-section{
   min-height: 40px;
   text-align: center;
-  background: url("images/about_bbqinterior.jpg") 0 -330px;
-  background-repeat: no-repeat;
-
-  background-size: cover;
 }
 #map{
   z-index: 500;
